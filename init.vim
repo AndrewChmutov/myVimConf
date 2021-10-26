@@ -46,7 +46,10 @@ set noswapfile
 nnoremap<F3> :ClangFormat<CR>
 
 "map making
-map <F8> :make%< && ./a.out<CR>
+map <F8> :make%< && ./*<CR>
+
+"map saving
+map <F5> :w<CR>
 
 "map fzf
 nnoremap <C-n> :Files<Cr>
